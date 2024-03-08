@@ -1,1 +1,76 @@
-@import "bootstrap";
+//@import "bootstrap";
+$font-family-sans-serif:
+  // Cross-platform generic font family (default user interface font)
+  system-ui,
+  // Safari for macOS and iOS (San Francisco)
+  -apple-system,
+  // Windows
+  "Segoe UI",
+  // Android
+  Roboto,
+  // Basic web fallback
+  "Helvetica Neue", Arial,
+  // Linux
+  "Noto Sans",
+  "Liberation Sans",
+  // Sans serif fallback
+  sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$first: #0a369d;
+$second: #4472CA;
+$third: #5E7CE2;
+$fourth: #92B4F4;
+$fifth: #CFDEE7;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: $third;
+    font-family: $font-family-sans-serif;
+}
+body {
+    background-color: white;
+}
+header {
+    height: 50px;
+    display: flex;
+    background-color: $first;
+    color: white;
+    align-items: center;
+}
+footer {
+    background-color: $third;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+nav {
+    display: flex;
+    gap: 15px;
+    height: 100%;
+}
+nav a {
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a:hover {
+    background-color: $second;
+}
+.container {
+    max-width: 1080px;
+    width: 90%;
+    margin: auto;
+}

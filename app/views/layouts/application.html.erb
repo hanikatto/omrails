@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Omrails</title>
+    <title>Complete ASL</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,9 +11,20 @@
   </head>
 
   <body>
-    <%= link_to "Home", root_path %>
-    <%= link_to "About", about_path %>
-    <%= link_to "Contact Us", contact_path %>
+    <header>
+      <div class="container">
+        <nav>
+          <%= link_to "Home", root_path %>
+          <%= link_to "About", about_path %>
+          <%= link_to "Contact Us", contact_path %>
+        </nav>
+      </div>
+    </header>
+
     <%= yield %>
+
+    <footer>
+      Copyright 2024
+    </footer>
   </body>
 </html>
