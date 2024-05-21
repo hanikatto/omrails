@@ -60,14 +60,20 @@ nav {
     height: 100%;
     flex-direction: row;
 }
-nav a {
+nav a, nav button {
     height: 100%;
     padding: 0 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-nav a:hover {
+nav button {
+    background-color: initial;
+    color: white;
+    font-family: inherit;
+    font-size: inherit;
+}
+nav a:hover, nav button:hover {
     background-color: $second;
 }
 .navbar-nav {
@@ -82,4 +88,5 @@ nav a:hover {
     max-width: 1080px;
     width: 90%;
     margin: auto;
+    height: inherit;
 }

@@ -1,7 +1,4 @@
 <style>
-    .container {
-        height: inherit;
-    }
     h1 {
         margin: 140px 0 70px;
     }
@@ -12,9 +9,9 @@
 
 <div class="container">
     <% if user_signed_in? %>
-        <h1>Welcome to the Test Site</h1>
-    <% else %>
         <h1>Welcome back, User.</h1>
+    <% else %>
+        <h1>Welcome to the Test Site</h1>
     <% end %>
     <p>Welcome. Practice your ASL here!</p>
 </div>
