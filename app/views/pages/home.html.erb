@@ -11,6 +11,10 @@
 </style>
 
 <div class="container">
-    <h1>Welcome to the Test Site</h1>
+    <% if user_signed_in? %>
+        <h1>Welcome to the Test Site</h1>
+    <% else %>
+        <h1>Welcome back, User.</h1>
+    <% end %>
     <p>Welcome. Practice your ASL here!</p>
 </div>
