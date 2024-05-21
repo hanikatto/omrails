@@ -58,6 +58,7 @@ nav {
     display: flex;
     gap: 15px;
     height: 100%;
+    flex-direction: row;
 }
 nav a {
     height: 100%;
@@ -68,6 +69,14 @@ nav a {
 }
 nav a:hover {
     background-color: $second;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+.navbar-nav li {
+    text-decoration: none;
+    list-style: none;
 }
 .container {
     max-width: 1080px;
